@@ -1,0 +1,19 @@
+{
+    "name": "prashant_kansal/wpgreeks-cpt",
+    "description": "WPGreeks CPT Plugin provides an easy to use interface for registering and managing custom post types.",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Prashant Agarwal",
+            "email": "er.prashantkansal1993@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+		"php": ">=7.2"
+	},
+    "autoload": {
+        "psr-4": {"Inc\\": "./inc"}
+    }
+}
