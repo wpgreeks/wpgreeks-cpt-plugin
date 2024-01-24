@@ -22,31 +22,44 @@
 		</div>
 
 		<div id="tab-2" class="tab-pane">
-			<h1>WPGreeks CPT 1.0.0</h1>
 			<P>Thank you for choosing WPGreeks CPT! We hope that your experience with our plugin makes creating post types and organizing your content quick and easy.</P>
+			<h1>=== Changelogs ===</h1>
+			<h2>1.0.0 Jan.24.2024</h2>
+			<ul>
+				<li>First initial release of plugin:</li>
+			</li>
+
+			<h2>1.1.0 Jan.24.2024</h2>
+			<ul>
+				<li>New. Enhance content categorization with custom taxonomies</li>
+				<li>New. Modern Design UI for Admin Dashboard</li>
+				<li>Added. Menu Icon Parameter for post types.</li>
+				<li>Added. Publicly Queryable Parameter for post types.</li>
+				<li>Added. Fields Description for understand the means of fields for post types.</li>
+				<li>Fix. Restricted edit the Post Type Slug</li>
+				<li>Updated: readme descriptions and screenshots.</li>
+			</ul>
 		</div>
 
 		<div id="tab-3" class="tab-pane">
 			<h1>About WPGreeks CPT</h1>
-			<p>Enhance the functionality of your WordPress website with WPGreeks CPT (Custom Post Types), a powerful and versatile plugin designed to streamline content management. Whether you're a blogger, business owner, or developer, WPGreeks CPT empowers you to create custom post types effortlessly, tailoring your website's structure to meet your unique needs. Also transform your WordPress admin dashboard into a visually stunning and highly functional workspace.</p>
+			<p>Take control of your WordPress content management with WPGreeks CPT, a feature-packed plugin that redefines how you structure and present your website content. WPGreeks CPT empowers you with these functionalities: Custom Post Types, Custom Taxonomies, and a Modern Design UI for the admin dashboard. Whether you're a blogger, business owner, or developer, WPGreeks CPT empowers you to create custom post types, custom taxonomies effortlessly, tailoring your website's structure to meet your unique needs.</p>
 
 			<p><strong>Key Features:</strong></p>
 			<ol>
-				<li><strong>Custom Post Types Made Simple:</strong> With WPGreeks CPT, you can easily create and manage custom post types without delving into complex coding. Effortlessly organize your content, making it more structured and user-friendly.</li>
+			<li><strong>Custom Post Types:</strong> WPGreeks CPT simplifies the creation and management of custom post types, allowing you to organize your content in a way that best suits your website's unique needs. Tailor your posts for portfolios, testimonials, events, and more with ease.</li>
 
-				<li><strong>Flexible Content Management:</strong> Take control of your website's content by defining custom post types for various content elements. Whether it's portfolios, testimonials, events, or any other content, WPGreeks CPT provides the flexibility you need.</li>
+			<li><strong>Custom Taxonomies:</strong> Enhance content categorization with custom taxonomies. WPGreeks CPT enables you to create and manage taxonomies specific to your content, ensuring a more granular and efficient way to organize and filter information.</li>
 
-				<li><strong>Intuitive Interface:</strong> Our user-friendly interface ensures that creating and managing custom post types is a breeze. No technical expertise required – WPGreeks CPT simplifies the process for beginners and experts alike.</li>
+			<li><strong>Modern Design UI:</strong> Elevate your admin dashboard experience with a modern and visually appealing user interface. WPGreeks CPT not only enhances the functionality of your WordPress backend but also provides an aesthetically pleasing environment for effortless content management.</li>
 
-				<li><strong>Template Support:</strong> Customize the display of your custom post types by utilizing templates. WPGreeks CPT seamlessly integrates with your theme, allowing you to present your content in a visually appealing and cohesive manner.</li>
+			<li><strong>Intuitive Content Organization:</strong> The plugin's user-friendly interface ensures that even complex content structures are easy to manage. With clear navigation and intuitive controls, you can efficiently create, edit, and organize your custom post types and taxonomies.</li>
 
-				<li><strong>SEO-Friendly:</strong> Ensure your content gets the visibility it deserves with WPGreeks CPT's SEO-friendly features. Optimize each custom post type for search engines and enhance your website's discoverability.</li>
+			<li><strong>Template Support:</strong> Customize the display of your custom post types with seamless template integration. WPGreeks CPT ensures that your content not only functions well but also looks stunning, maintaining consistency with your website's design.</li>
 
-				<li><strong>Import functionality:</strong> You can easily import the custom post types code that's you created.</li>
+			<li><strong>Import functionality:</strong> You can easily import the custom post types code that's you created by our plugin.</li>
 
-				<li><strong>Modern Design:</strong> Say goodbye to a dull admin dashboard! Admin Dashboard UI brings a modern and visually appealing design to your WordPress backend, providing a more enjoyable and efficient user experience.</li>
-
-				<li><strong>Responsive Design:</strong> Whether you're managing your site from a desktop or a mobile device, Admin Dashboard UI ensures a seamless and responsive experience, adapting to different screen sizes effortlessly.</li>
+			<li><strong>Developer-Friendly:</strong> For developers, WPGreeks CPT offers extensibility through hooks and filters, allowing for further customization and integration with other plugins or themes.</li>
 			</ol>
 
 			<p>Empower your WordPress website with WPGreeks CPT and unlock a new level of content management. Download the plugin now and start creating a more organized and tailored online experience for your audience.</p>

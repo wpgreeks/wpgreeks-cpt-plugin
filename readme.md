@@ -21,9 +21,10 @@ Enhance the functionality of your WordPress website with WPGreeks CPT (Custom Po
 * **Responsive Design:** Whether you're managing your site from a desktop or a mobile device, Admin Dashboard UI ensures a seamless and responsive experience, adapting to different screen sizes effortlessly.
 
 
-## Authors
+## Developers
 
 - [@wpgreeks](https://github.com/wpgreeks)
+- [@prashant4](https://profiles.wordpress.org/prashant4/)
 
 
 ## Support

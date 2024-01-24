@@ -7,7 +7,7 @@ Stable tag: 1.0
 Requires PHP: 7.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
-WPGreeks CPT Plugin provides an easy to use interface for registering and managing custom post types.
+WPGreeks CPT Plugin provides an easy to use interface for registering and managing custom post types and taxonomies.
 
 == Description ==
 
