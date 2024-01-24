@@ -21,7 +21,8 @@ final class Init
 			Base\CustomPostTypeController::class,
 			Base\CustomTaxonomyController::class,
 			Base\AuthController::class,
-			Base\ModernDesignController::class
+			Base\ModernDesignController::class,
+			Base\WidgetController::class
 		];
 	}
 

@@ -24,6 +24,7 @@ class BaseController
 			'taxonomy_manager' => 'Activate Taxonomy Manager',
 			'modern_design'=> 'Enable Modern Design UI',
 			'login_manager' => 'Activate Ajax Login/Signup',
+			'wpgreeks_widget' => 'Activate WPGreeks Widget'
 		);
 	}
 
