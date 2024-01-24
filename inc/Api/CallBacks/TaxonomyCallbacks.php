@@ -9,7 +9,7 @@ namespace Inc\Api\CallBacks;
 class TaxonomyCallbacks
 {
 	public function taxSectionManager() {
-		echo 'Create as many Custom Taxonomies as you want.';
+		echo 'Create custom taxonomies to classify post type content';
 	}
 
 	public function taxSanitize( $input )
