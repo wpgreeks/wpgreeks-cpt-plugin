@@ -275,3 +275,9 @@ form#edit-cpt-form #post_type, form#edit-tax-form #taxonomy {
   pointer-events: none;
   background: #f0f0f1;
 }
+.wrap #tab-2 ul {
+  margin-left: 15px;
+}
+.wrap #tab-2 ul li {
+  list-style-type: disclosure-closed;
+}

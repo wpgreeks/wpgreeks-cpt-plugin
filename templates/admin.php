@@ -27,7 +27,7 @@
 			<h2>1.0.0 Jan.24.2024</h2>
 			<ul>
 				<li>First initial release of plugin:</li>
-			</li>
+			</ul>
 
 			<h2>1.1.0 Jan.24.2024</h2>
 			<ul>
