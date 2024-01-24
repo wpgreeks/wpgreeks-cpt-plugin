@@ -8,7 +8,7 @@
 /*
 Plugin Name: WPGreeks CPT
 Description: WPGreeks CPT Plugin provides an easy to use interface for registering and managing custom post types.
-Version: 1.0.0
+Version: 1.1.0
 Requires at least: 5.2
 Requires PHP: 7.4
 Author: Prashant Agarwal

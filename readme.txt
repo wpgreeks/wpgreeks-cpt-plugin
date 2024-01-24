@@ -63,3 +63,13 @@ WPGreeks CPT is in full compliance with General Data Protection Regulation (GDPR
 7. **Configure and Enjoy:** Head to the "WPGreeks CPT" section in the WordPress admin menu to configure your custom post types, taxonomies, and explore the modern UI features in your admin dashboard.
 
 That's it! Now you can easily start creating custom post types in WordPress.
+
+== Changelog ==
+= 1.1.0 Jan 14 2024 =
+* New. Enhance content categorization with custom taxonomies
+* New. Modern Design UI for Admin Dashboard
+* Added. Menu Icon Parameter for post types.
+* Added. Publicly Queryable Parameter for post types.
+* Added. Fields Description for understand the means of fields for post types.
+* Fix. Restricted edit the Post Type Slug
+* Updated: readme descriptions and screenshots.
