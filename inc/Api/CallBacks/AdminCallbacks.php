@@ -29,4 +29,9 @@ class AdminCallbacks extends BaseController
 		echo "<h1>Login Manager</h1>";
 		echo "<p>Coming soon...</p>";
 	}
+
+	public function adminBreadcrumb()
+	{
+		return require_once( "$this->plugin_path/templates/breadcrumb.php" );
+	}
 }

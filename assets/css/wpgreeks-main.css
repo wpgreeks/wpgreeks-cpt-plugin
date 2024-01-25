@@ -60,10 +60,10 @@ div.ui-toggle input[type='checkbox'] {
 }
 
 div.ui-toggle input[type='checkbox']:checked+label {
-  border-color: #009eea;
-  background: #009eea;
-  -webkit-box-shadow: inset 0 0 0 10px #009eea;
-  box-shadow: inset 0 0 0 10px #009eea
+  border-color: #1e5491;
+  background: #1e5491;
+  -webkit-box-shadow: inset 0 0 0 10px #1e5491;
+  box-shadow: inset 0 0 0 10px #1e5491
 }
 
 div.ui-toggle input[type='checkbox']:checked+label>div {
@@ -81,8 +81,8 @@ div.ui-toggle label {
   -ms-user-select: none;
   user-select: none;
   background: #8c8c8c;
-  -webkit-box-shadow: inset 0 0 0 0 #009eea;
-  box-shadow: inset 0 0 0 0 #009eea;
+  -webkit-box-shadow: inset 0 0 0 0 #1e5491;
+  box-shadow: inset 0 0 0 0 #1e5491;
   border: 2px solid #8c8c8c;
   border-radius: 22px;
   width: 40px;
@@ -288,4 +288,7 @@ textarea.widget-textarea{
   margin: 0;
   height: 100px;
   resize: none;
+}
+.form-table th {
+  width: 250px;
 }

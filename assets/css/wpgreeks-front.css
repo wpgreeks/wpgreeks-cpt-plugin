@@ -1,0 +1,14 @@
+ul#wpgreeksBreadcrumb {
+    background: #1e54911a;
+    padding: 10px 20px;
+}
+ul#wpgreeksBreadcrumb li {
+    list-style-type: none;
+    display: inline;
+} 
+ul#wpgreeksBreadcrumb li.seperator {
+    padding: 0px 10px;
+}
+ul#wpgreeksBreadcrumb .breadcrumb-item:not(.item-current) a {
+    font-weight: bold;
+}

@@ -22,7 +22,8 @@ final class Init
 			Base\CustomTaxonomyController::class,
 			Base\AuthController::class,
 			Base\ModernDesignController::class,
-			Base\WidgetController::class
+			Base\WidgetController::class,
+			Base\BreadcrumbController::class
 		];
 	}
 

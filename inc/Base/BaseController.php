@@ -23,8 +23,9 @@ class BaseController
 			'cpt_manager' => 'Activate CPT Manager',
 			'taxonomy_manager' => 'Activate Taxonomy Manager',
 			'modern_design'=> 'Enable Modern Design UI',
+			'wpgreeks_widget' => 'Activate WPGreeks Widget',
+			'wpgreeks_breadcrumb' => 'Activate WPGreeks Breadcrumbs',
 			'login_manager' => 'Activate Ajax Login/Signup',
-			'wpgreeks_widget' => 'Activate WPGreeks Widget'
 		);
 	}
 
