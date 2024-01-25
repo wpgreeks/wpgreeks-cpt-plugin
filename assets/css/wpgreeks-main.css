@@ -281,3 +281,11 @@ form#edit-cpt-form #post_type, form#edit-tax-form #taxonomy {
 .wrap #tab-2 ul li {
   list-style-type: disclosure-closed;
 }
+textarea.widget-textarea{
+  border-spacing: 0;
+  width: 100%;
+  clear: both;
+  margin: 0;
+  height: 100px;
+  resize: none;
+}

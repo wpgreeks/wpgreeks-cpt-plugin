@@ -49,24 +49,23 @@ class WpgreeksWidget extends WP_Widget
 		if ( ! empty( $instance['title'] ) ) {
 			echo $args['before_title'] . apply_filters( 'widget_title', $instance['title'] ) . $args['after_title'];
 		}
-		if ( ! empty( $instance['image'] ) ) {
-			echo '<img src="'. esc_url( $instance['image'] ) .'" alt="">';
+		if ( ! empty( $instance['description'] ) ) {
+			echo "<p class='widget-description'>".$instance['description']."</p>";
 		}
 		echo $args['after_widget'];
 	}
 
 	public function form( $instance ) {
-		$title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'Custom Text', 'wpgreeks_widgets_text' );
-		$image = ! empty( $instance['image'] ) ? $instance['image'] : '';
+		$title = ! empty( $instance['title'] ) ? $instance['title'] : '';
+		$description = ! empty( $instance['description'] ) ? $instance['description'] : '';
 		?>
 		<p>
 			<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_attr_e( 'Title:', 'wpgreeks_widgets_text' ); ?></label> 
 			<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
 		</p>
 		<p>
-			<label for="<?php echo esc_attr( $this->get_field_id( 'image' ) ); ?>"><?php esc_attr_e( 'Image:', 'wpgreeks_widgets_text' ); ?></label> 
-			<input class="widefat image-upload" id="<?php echo esc_attr( $this->get_field_id( 'image' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'image' ) ); ?>" type="text" value="<?php echo esc_url( $image ); ?>">
-			<button type="button" class="button button-primary js-image-upload">Select Image</button>
+			<label for="<?php echo esc_attr( $this->get_field_id( 'description' ) ); ?>"><?php esc_attr_e( 'Description:', 'wpgreeks_widgets_text' ); ?></label> 
+			<textarea class="widget-textarea" id="<?php echo esc_attr( $this->get_field_id( 'description' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'description' ) ); ?>"><?php echo esc_attr( $description ); ?></textarea>
 		</p>
 		<?php 
 	}
@@ -74,7 +73,7 @@ class WpgreeksWidget extends WP_Widget
 	public function update( $new_instance, $old_instance ) {
 		$instance = $old_instance;
 		$instance['title'] = sanitize_text_field( $new_instance['title'] );
-		$instance['image'] = ! empty( $new_instance['image'] ) ? $new_instance['image'] : '';
+		$instance['description'] = sanitize_textarea_field( $new_instance['description'] );
 
 		return $instance;
 	}
