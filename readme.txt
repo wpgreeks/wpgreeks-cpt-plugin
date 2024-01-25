@@ -31,6 +31,44 @@ Take control of your WordPress content management with WPGreeks CPT, a feature-p
 
 Transform your WordPress website with WPGreeks CPT, where custom post types, custom taxonomies, and a modern admin dashboard unite to give you unparalleled control over your content management experience. Download the plugin now and start creating a more organized and tailored online experience for your audience.
 
+== Frequently Asked Questions (FAQs) - WPGreeks CPT ==
+
+= What is WPGreeks CPT, and how can it enhance my WordPress site? =
+
+WPGreeks CPT is a powerful WordPress plugin designed to bring customization to the forefront. It allows you to create custom post types and taxonomies, giving you the flexibility to shape your content structure precisely as you envision.
+
+= How do Custom Post Types benefit my website? =
+
+Custom Post Types in WPGreeks CPT enable you to define new content types tailored to your website's needs. This means you can organize and present diverse content, such as portfolios, testimonials, or events, with ease.
+
+= Can I create multiple Custom Post Types using WPGreeks CPT? =
+
+Absolutely! WPGreeks CPT is built to be versatile. You can create as many custom post types as your website requires, allowing for a dynamic and tailored content presentation.
+
+= What are Custom Taxonomies, and why should I use them with WPGreeks CPT? =
+
+Custom Taxonomies help you organize content efficiently. With WPGreeks CPT, you can set up custom taxonomies for your custom post types, creating a structured and logical content hierarchy on your site.
+
+= Does WPGreeks CPT provide a Modern Design UI for the admin dashboard? =
+
+Yes, it does! WPGreeks CPT not only adds functionality but also elevates the user experience. The plugin comes with a modern and intuitive design for the admin dashboard, making content management a seamless and visually pleasing task.
+
+= Are there customizable widgets included with WPGreeks CPT? =
+
+Absolutely! WPGreeks CPT extends its features to widgets, allowing you to display customized content in different areas of your website. These widgets are designed to seamlessly integrate with your theme, providing enhanced flexibility.
+
+= Is WPGreeks CPT suitable for beginners? =
+
+Yes, indeed. WPGreeks CPT is designed with user-friendliness in mind. Whether you're a beginner or an experienced user, the intuitive interface ensures a smooth experience while setting up custom post types, taxonomies, and managing your content.
+
+= How do I get support for WPGreeks CPT? =
+
+We provide dedicated support for WPGreeks CPT. If you have any questions, face challenges, or need assistance, our support team is ready to help you make the most of your plugin. Contact us for prompt assistance.
+
+= Is WPGreeks CPT regularly updated? =
+
+Absolutely. We are committed to keeping WPGreeks CPT up to date with the latest WordPress standards and technology. Regular updates ensure compatibility, security, and access to new features for our users.
+
 == Screenshots ==
 
 1. screenshot-1.png
