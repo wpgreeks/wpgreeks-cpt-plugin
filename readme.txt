@@ -1,5 +1,6 @@
 === WPGreeks CPT ===
 Contributors: wpgreeks
+Donate link: https://www.buymeacoffee.com/wpgreeks
 Tags: CPT, WPHiregreek, Admin UI, Custom Post Types, Post Types, taxonomy, content types, CMS, post, types, custom
 Requires at least: 5.2
 Tested up to: 6.4.2
