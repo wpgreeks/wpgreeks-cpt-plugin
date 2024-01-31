@@ -1,5 +1,7 @@
 <div class="login-container">
     <form id="wpgreeks-login-form" method="post" action="#" class="login-form">
+        <h2>Welcome Back</h2>
+        <p>Please login to your account</p>
         <p class="status"></p>
         <div class="form-group">
             <label for="username">Username</label>

@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
     $('form#wpgreeks-login-form').on('submit', function(e){
-        $('form#wpgreeks-login-form p.status').show().html(ajax_wpgreeks_login.loadingmessage);
+        $('form#wpgreeks-login-form p.status').show().html(ajax_wpgreeks_login.loadingmessage).addClass(ajax_wpgreeks_login.infoclass).removeClass('error');
         setTimeout(function() {
             $("form#wpgreeks-login-form p.status").hide('blind', {}, 500)
         }, 5000);
@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
                 'security': $('form#wpgreeks-login-form #security').val()
               },
             success: function(data){
-                $('form#wpgreeks-login-form p.status').html(data.message);
+                $('form#wpgreeks-login-form p.status').html(data.message).addClass(data.class);
                 if (data.status == true){
                     document.location.href = ajax_wpgreeks_login.redirecturl;
                 }

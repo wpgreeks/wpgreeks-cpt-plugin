@@ -37,7 +37,8 @@ class AuthController extends BaseController
 		wp_localize_script( 'wpgreeks-login-script', 'ajax_wpgreeks_login', array( 
 			'ajaxurl' => admin_url( 'admin-ajax.php' ),
 			'redirecturl' => home_url(),
-			'loadingmessage' => __('We are retrieving your information, please wait...')
+			'loadingmessage' => __('We are retrieving your information, please wait...'),
+			'infoclass'=> __('info')
 		));
 	}
 
@@ -57,14 +58,16 @@ class AuthController extends BaseController
 			echo json_encode(
 				array(
 					'status'=>false, 
-					'message'=>__('Wrong Username or Password.')
+					'message'=>__('Wrong Username or Password.'),
+					'class'=> __('error')
 				)
 			);
 		} else {
 			echo json_encode(
 				array(
 					'status'=>true,  
-					'message'=>__('Login successful, redirecting...')
+					'message'=>__('Login successful, redirecting...'),
+					'class'=> __('success')
 				)
 			);
 		}

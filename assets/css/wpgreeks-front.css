@@ -28,6 +28,10 @@ ul#wpgreeksBreadcrumb .breadcrumb-item:not(.item-current) a {
     display: flex;
     flex-direction: column;
   }
+  .login-form h2 {
+    color: #333;
+    margin-bottom: 0px;
+  }
   .login-form p {
     margin-bottom: 20px;
     color: #777;
@@ -50,7 +54,7 @@ ul#wpgreeksBreadcrumb .breadcrumb-item:not(.item-current) a {
     outline: none;
   }
   
-  .login-form button {background-color: #007bff;color: #fff;font-size: 16px;transition: background-color 0.3s ease;display: grid;margin-bottom: 10px;}
+  .login-form button {width:100%; color: #fff;font-size: 16px;transition: background-color 0.3s ease;display: grid;margin-bottom: 10px;}
   
   .login-form .form-group label {
       text-align: left;
@@ -61,3 +65,13 @@ ul#wpgreeksBreadcrumb .breadcrumb-item:not(.item-current) a {
       text-align: left;
       display: block;
   }
+  p.status.error {
+    background: hsl(11deg 80% 45% / 29%);
+    color: #000;
+    padding: 5px 0px;
+}
+p.status.success {
+    background: hsl(135.38deg 51.4% 51.6% / 47%);
+    color: #000;
+    padding: 5px 0px;
+}
