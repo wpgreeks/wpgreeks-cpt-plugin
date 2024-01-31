@@ -12,3 +12,52 @@ ul#wpgreeksBreadcrumb li.seperator {
 ul#wpgreeksBreadcrumb .breadcrumb-item:not(.item-current) a {
     font-weight: bold;
 }
+
+/* Login Form CSS */
+.login-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    margin: 20px auto;
+  }
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .login-form p {
+    margin-bottom: 20px;
+    color: #777;
+  }
+  
+  .login-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .login-form .form-group input {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 100%;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  .login-form .form-group input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .login-form button {background-color: #007bff;color: #fff;font-size: 16px;transition: background-color 0.3s ease;display: grid;margin-bottom: 10px;}
+  
+  .login-form .form-group label {
+      text-align: left;
+      display: block;
+  }
+  
+  .login-form .login-form-btn-action a {
+      text-align: left;
+      display: block;
+  }

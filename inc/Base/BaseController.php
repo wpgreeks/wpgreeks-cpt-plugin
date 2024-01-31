@@ -25,7 +25,7 @@ class BaseController
 			'modern_design'=> 'Enable Modern Design UI',
 			'wpgreeks_widget' => 'Activate WPGreeks Widget',
 			'wpgreeks_breadcrumb' => 'Activate WPGreeks Breadcrumbs',
-			'login_manager' => 'Activate Ajax Login/Signup',
+			'login_manager' => 'Activate Ajax Login Form',
 		);
 	}
 
