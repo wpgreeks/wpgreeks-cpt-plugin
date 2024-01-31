@@ -4,7 +4,7 @@
         <p>Please login to your account</p>
         <p class="status"></p>
         <div class="form-group">
-            <label for="username">Username</label>
+            <label for="username">Username or Email Address</label>
             <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
         </div>
         <div class="form-group">

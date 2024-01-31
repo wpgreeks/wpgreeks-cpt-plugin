@@ -28,7 +28,7 @@ class AuthController extends BaseController
 		// Enable the user with no privileges to run ajax_login() in AJAX
 		add_action( 'wp_ajax_nopriv_ajaxlogin', array( $this, 'login' ) );
 		add_action('init', array( $this, 'wpgreeks_login_ajax' ));
-		add_shortcode( 'wpgreeks-login', array( $this, 'SetLoginFormShortcodePage' ) );
+		add_shortcode( 'wpgreeks-login', array( $this, 'SetLoginFormShortcode' ) );
 	}
 
 	public function wpgreeks_login_ajax(){
@@ -75,17 +75,35 @@ class AuthController extends BaseController
 		die();
 	}
 
-	public function SetLoginFormShortcodePage()
+	public function SetLoginFormShortcode()
 	{
-		if ( is_user_logged_in() ) return;
+		$loggedInUserMsg = "<div class='loggedinUserMsg'>". 'You are already logged in.' ."</div>";
+		if ( is_user_logged_in() ) return $loggedInUserMsg;
 
-		ob_start();
-		$file = $this->plugin_path . 'templates/login-form.php';
-		if ( file_exists( $file ) ){
-			load_template( $file, true );
-		}	
-		return ob_get_clean();
+		ob_start(); ?>
+		<div class="login-container">
+			<form id="wpgreeks-login-form" method="post" action="#" class="login-form">
+				<h2>Welcome Back</h2>
+				<p>Please login to your account</p>
+				<p class="status"></p>
+				<div class="form-group">
+					<label for="username">Username or Email Address</label>
+					<input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
+				</div>
+				<div class="form-group">
+					<label for="password">Password</label>
+					<input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+				</div>
+				<div class="login-form-btn-action">
+					<button type="submit" name="submit" class="btn btn-primary btn-dark">LOG IN</button>
+					<a href="<?php echo wp_lostpassword_url(); ?>">Request a new password?</a>
 
+					<input type="hidden" name="action" value="wpgreeks_login_form">
+					<?php wp_nonce_field( 'ajax-login-nonce', 'security' ); ?>
+				</div>
+			</form>
+		</div>
+		<?php return ob_get_clean();
 	}
 
 	public function setSubpages()
