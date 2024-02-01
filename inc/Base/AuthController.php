@@ -154,13 +154,13 @@ class AuthController extends BaseController
 	{
 		ob_start(); ?>
 		<div class="signup-container">
-			<form action="#" method="POST" name="register-form" class="register-form" autocomplete="off">
+			<form id="wpgreeks-register-form" action="#" method="POST" name="register-form" class="register-form" autocomplete="off">
 				<h2>Create Account</h2>
 				<p>Enter your personal details and start journey with us</p>
 				<p class="register-message" style="display:none"></p>
 				<div class="form-group">
 					<label for="username">Enter Username</label>
-					<input type="text" class="form-control" name="new_user_name" placeholder="Username" id="new-username">
+					<input type="text" class="form-control" name="new_user_name" placeholder="Username" id="new-username" >
 				</div>
 				<div class="form-group">
 					<label for="useremail">Enter Email Address</label>
@@ -168,11 +168,11 @@ class AuthController extends BaseController
 				</div>
 				<div class="form-group">
 					<label for="password">Enter your Password</label>
-					<input type="password" class="form-control" name="new_user_password" placeholder="Password" id="new-userpassword">
+					<input type="password" class="form-control" name="new_user_password" placeholder="Password" id="new-userpassword" autocomplete>
 				</div>
 				<div class="form-group">
 					<label for="cpassword">Please Confirm Password</label>
-					<input type="password" class="form-control" name="re-pwd" placeholder="Confirm Password" id="re-pwd">
+					<input type="password" class="form-control" name="re-pwd" placeholder="Confirm Password" id="re-pwd" autocomplete>
 				</div>
 				<div class="register-form-btn-action">
 					<input type="submit"  class="button" id="register-button" value="Register">

@@ -33,18 +33,32 @@ jQuery(document).ready(function($) {
             type:"POST",
             url: ajax_wpgreeks_login.ajaxurl,
             data: {
-                action: "register_user_front_end",
+                action: "wpgreeks_signup",
                 new_user_name : newUserName,
                 new_user_email : newUserEmail,
                 new_user_password : newUserPassword
             },
             success: function(results){
-                console.log(results);
                 jQuery('.register-message').text(results).show();
             },
             error: function(results) {
             }
         });
     });
+
+    $('#wpgreeks-register-form').validate(
+        {
+            rules: {
+                new_user_email: {
+                    required: true,
+                    email: true
+                },
+                new_user_name: {
+                    required: true,
+                    minlength: 5
+                }
+            }
+        }
+    );
 
 });
