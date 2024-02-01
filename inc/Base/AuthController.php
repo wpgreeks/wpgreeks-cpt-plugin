@@ -104,7 +104,7 @@ class AuthController extends BaseController
 			{
 			  if (isset($user_id->errors['empty_user_login'])) 
 			  	{
-					$notice_key = 'All fields are mandatory';
+					$notice_key = 'Username and Email are mandatory';
 					echo $notice_key;
 				} 
 				elseif (isset($user_id->errors['existing_user_login'])) 
