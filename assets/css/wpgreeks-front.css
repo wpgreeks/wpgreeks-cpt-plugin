@@ -14,7 +14,7 @@ ul#wpgreeksBreadcrumb .breadcrumb-item:not(.item-current) a {
 }
 
 /* Login Form CSS */
-.login-container {
+.login-container, .signup-container {
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -24,24 +24,24 @@ ul#wpgreeksBreadcrumb .breadcrumb-item:not(.item-current) a {
     text-align: center;
     margin: 20px auto;
   }
-  .login-form {
+  .login-form,  .register-form {
     display: flex;
     flex-direction: column;
   }
-  .login-form h2 {
+  .login-form h2, .register-form h2 {
     color: #333;
     margin-bottom: 0px;
   }
-  .login-form p {
+  .login-form p, .register-form p {
     margin-bottom: 20px;
     color: #777;
   }
   
-  .login-form .form-group {
+  .login-form .form-group, .register-form .form-group {
     margin-bottom: 20px;
   }
   
-  .login-form .form-group input {
+  .login-form .form-group input, .register-form .form-group input {
     padding: 15px;
     border-radius: 8px;
     border: 1px solid #ddd;
@@ -49,20 +49,20 @@ ul#wpgreeksBreadcrumb .breadcrumb-item:not(.item-current) a {
     font-size: 16px;
     transition: border-color 0.3s ease;
   }
-  .login-form .form-group input:focus {
+  .login-form .form-group input:focus, .register-form .form-group input:focus {
     border-color: #007bff;
     outline: none;
   }
   
-  .login-form button {width:100%; color: #fff;font-size: 16px;transition: background-color 0.3s ease;display: grid;margin-bottom: 10px;}
+  .login-form button, .register-form .button {width:100%; color: #fff;font-size: 16px;transition: background-color 0.3s ease;display: grid;margin-bottom: 10px;}
   
-  .login-form .form-group label {
+  .login-form .form-group label, .register-form .form-group label {
       text-align: left;
       display: block;
       font-weight: 600;
   }
   
-  .login-form .login-form-btn-action a {
+  .login-form .login-form-btn-action a, .register-form .register-form-btn-action a {
       text-align: left;
       display: block;
   }

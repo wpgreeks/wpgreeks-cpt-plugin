@@ -26,7 +26,7 @@ class AdminCallbacks extends BaseController
 
 	public function adminAuth()
 	{
-		return require_once( "$this->plugin_path/templates/auth-login.php" );
+		return require_once( "$this->plugin_path/templates/auth.php" );
 	}
 
 	public function adminBreadcrumb()

@@ -26,13 +26,18 @@ class AuthController extends BaseController
 		$this->settings->addSubPages( $this->subpages )->register();
 
 		// Enable the user with no privileges to run ajax_login() in AJAX
-		add_action( 'wp_ajax_nopriv_ajaxlogin', array( $this, 'login' ) );
+		add_action( 'wp_ajax_nopriv_ajaxlogin', array( $this, 'wpgreeks_login' ) );
 		add_action('init', array( $this, 'wpgreeks_login_ajax' ));
 		add_shortcode( 'wpgreeks-login', array( $this, 'SetLoginFormShortcode' ) );
+
+		add_action('wp_ajax_wpgreeks_signup',  array( $this, 'wpgreeks_signup' ));
+		add_action('wp_ajax_nopriv_wpgreeks_signup', array( $this, 'wpgreeks_signup' ));
+		add_shortcode( 'wpgreeks-signup', array( $this, 'SetSignupFormShortcode' ) );
 	}
 
 	public function wpgreeks_login_ajax(){
-		wp_register_script('wpgreeks-login-script', $this->plugin_url . 'assets/js/wpgreeks-auth.js', array('jquery') ); 
+		wp_register_script('wpgreeks-login-script', $this->plugin_url . 'assets/js/wpgreeks-auth.js', array('jquery') );
+		wp_enqueue_script( 'wpgreeks-validate-script', 'https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.js', array('jquery') );
 		wp_enqueue_script('wpgreeks-login-script');
 		wp_localize_script( 'wpgreeks-login-script', 'ajax_wpgreeks_login', array( 
 			'ajaxurl' => admin_url( 'admin-ajax.php' ),
@@ -42,7 +47,8 @@ class AuthController extends BaseController
 		));
 	}
 
-	public function login(){
+	public function wpgreeks_login()
+	{
 
 		// First check the nonce, if it fails the function will break
 		check_ajax_referer( 'ajax-login-nonce', 'security' );
@@ -73,6 +79,44 @@ class AuthController extends BaseController
 		}
 	
 		die();
+	}
+
+	public function wpgreeks_signup()
+	{
+		$new_user_name = stripcslashes($_POST['new_user_name']);
+		$new_user_email = stripcslashes($_POST['new_user_email']);
+		$new_user_password = $_POST['new_user_password'];
+		$user_nice_name = strtolower($_POST['new_user_email']);
+		$user_data = array(
+			'user_login' => $new_user_name,
+			'user_email' => $new_user_email,
+			'user_pass' => $new_user_password,
+			'user_nicename' => $user_nice_name,
+			'display_name' => $new_user_first_name,
+			'role' => 'subscriber'
+		);
+		$user_id = wp_insert_user($user_data);
+			if (!is_wp_error($user_id)) 
+			{
+				echo 'Welcome! You have registered successfully...';
+			} 
+			else 
+			{
+			  if (isset($user_id->errors['empty_user_login'])) 
+			  	{
+					$notice_key = 'All fields are mandatory';
+					echo $notice_key;
+				} 
+				elseif (isset($user_id->errors['existing_user_login'])) 
+				{
+					echo'Username already exists, please try another username.';
+				} 
+				else 
+				{
+					echo'Unable to create new user, please try again';
+				}
+			}
+	  die;
 	}
 
 	public function SetLoginFormShortcode()
@@ -106,13 +150,45 @@ class AuthController extends BaseController
 		<?php return ob_get_clean();
 	}
 
+	public function SetSignupFormShortcode()
+	{
+		ob_start(); ?>
+		<div class="signup-container">
+			<form action="#" method="POST" name="register-form" class="register-form" autocomplete="off">
+				<h2>Create Account</h2>
+				<p>Enter your personal details and start journey with us</p>
+				<p class="register-message" style="display:none"></p>
+				<div class="form-group">
+					<label for="username">Enter Username</label>
+					<input type="text" class="form-control" name="new_user_name" placeholder="Username" id="new-username">
+				</div>
+				<div class="form-group">
+					<label for="useremail">Enter Email Address</label>
+					<input type="email" class="form-control" name="new_user_email" placeholder="Email address" id="new-useremail">
+				</div>
+				<div class="form-group">
+					<label for="password">Enter your Password</label>
+					<input type="password" class="form-control" name="new_user_password" placeholder="Password" id="new-userpassword">
+				</div>
+				<div class="form-group">
+					<label for="cpassword">Please Confirm Password</label>
+					<input type="password" class="form-control" name="re-pwd" placeholder="Confirm Password" id="re-pwd">
+				</div>
+				<div class="register-form-btn-action">
+					<input type="submit"  class="button" id="register-button" value="Register">
+				</div>
+			</form>
+		</div>
+		<?php return ob_get_clean();
+	}
+
 	public function setSubpages()
 	{
 		$this->subpages = array(
 			array(
 				'parent_slug' => 'wpgreeks_plugin', 
-				'page_title' => 'Login Manager', 
-				'menu_title' => 'Login Manager', 
+				'page_title' => 'Login & Signup', 
+				'menu_title' => 'Login & Signup', 
 				'capability' => 'manage_options', 
 				'menu_slug' => 'wpgreeks_auth', 
 				'callback' => array( $this->callbacks, 'adminAuth' )
