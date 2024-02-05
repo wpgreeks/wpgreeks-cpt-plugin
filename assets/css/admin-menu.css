@@ -1,15 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap");
 
 body {
-    font-family: 'Montserrat',sans-serif
+    font-family: 'Mulish',sans-serif
 }
-
+#wpcontent, #wpfooter {
+}
 #wpadminbar * {
-    font-family: 'Montserrat',sans-serif
+    font-family: 'Mulish',sans-serif
 }
 
 .welcome-panel {
-    background: #1e5491
+    background: #488729;
 }
 
 .welcome-panel h3 {
@@ -29,7 +30,7 @@ body {
 }
 
 .welcome-panel-column-content a:hover {
-    color: #1e5491;
+    color: #488729;
 }
 
 .welcome-panel .welcome-panel-column-container {
@@ -53,16 +54,16 @@ a:hover,a:active,a:focus {
 }
 
 .wp-core-ui .button-link {
-    color: #1e5491;
+    color: #488729;
     font-weight: 600
 }
 
 .wp-core-ui .button-link:active,.wp-core-ui .button-link:hover {
-    color: #1e5491
+    color: #488729
 }
 
 .column-comments a.post-com-count-approved:focus .comment-count-approved,.column-comments a.post-com-count-approved:hover .comment-count-approved,.column-response a.post-com-count-approved:focus .comment-count-approved,.column-response a.post-com-count-approved:hover .comment-count-approved {
-    background: #1e5491
+    background: #488729
 }
 
 #media-upload a.del-link:hover,div.dashboard-widget-submit input:hover,.subsubsub a:hover,.subsubsub a.current:hover {
@@ -157,8 +158,8 @@ input[type=radio]:checked:before {
 
 .wrap .add-new-h2:hover,.wrap .page-title-action:hover,.tablenav .tablenav-pages a:hover,.tablenav .tablenav-pages a:focus {
     color: #FFF;
-    background-color: #1e5491;
-    border: 1px solid #1e5491
+    background-color: #488729;
+    border: 1px solid #488729
 }
 
 .view-switch a.current:before {
@@ -183,7 +184,7 @@ input[type=radio]:checked:before {
 
 #adminmenu a:hover,#adminmenu li.menu-top:hover,#adminmenu li.opensub > a.menu-top,#adminmenu li > a.menu-top:focus {
     color: #fff;
-    background-color: #1e5491
+    background-color: #488729
 }
 
 #adminmenu li.menu-top:hover div.wp-menu-image:before,#adminmenu li.opensub > a.menu-top div.wp-menu-image:before {
@@ -212,7 +213,7 @@ input[type=radio]:checked:before {
 }
 
 #adminmenu .wp-submenu a:focus,#adminmenu .wp-has-current-submenu .wp-submenu a:focus,.folded #adminmenu .wp-has-current-submenu .wp-submenu a:focus,#adminmenu a.wp-has-current-submenu:focus + .wp-submenu a:focus,#adminmenu .wp-has-current-submenu.opensub .wp-submenu a:focus,#adminmenu .wp-submenu a:hover,#adminmenu .wp-has-current-submenu .wp-submenu a:hover,.folded #adminmenu .wp-has-current-submenu .wp-submenu a:hover,#adminmenu a.wp-has-current-submenu:focus + .wp-submenu a:hover,#adminmenu .wp-has-current-submenu.opensub .wp-submenu a:hover {
-    color: #1e5491
+    color: #488729
 }
 
 #adminmenu .opensub .wp-submenu li.current a,#adminmenu .wp-submenu li.current a,#adminmenu a.wp-has-current-submenu:focus + .wp-submenu li.current a,#adminmenu .wp-has-current-submenu.opensub .wp-submenu li.current a {
@@ -229,7 +230,7 @@ ul#adminmenu a.wp-has-current-submenu:after,ul#adminmenu > li.current > a.curren
 
 #adminmenu li.current a.menu-top,#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,#adminmenu li.wp-has-current-submenu .wp-submenu .wp-submenu-head,.folded #adminmenu li.current.menu-top {
     color: #fff;
-    background: #1e5491
+    background: #488729
 }
 
 #adminmenu li.wp-has-current-submenu div.wp-menu-image:before,#adminmenu a.current:hover div.wp-menu-image:before,#adminmenu li.wp-has-current-submenu a:focus div.wp-menu-image:before,#adminmenu li.wp-has-current-submenu.opensub div.wp-menu-image:before,#adminmenu li:hover div.wp-menu-image:before,#adminmenu li a:focus div.wp-menu-image:before,#adminmenu li.opensub div.wp-menu-image:before,.ie8 #adminmenu li.opensub div.wp-menu-image:before {
@@ -364,7 +365,7 @@ div#wp-responsive-toggle a:before {
 }
 
 .wp-core-ui .button,.wp-core-ui .button-secondary {
-    background: #1e5491;
+    background: #488729;
     border-radius: inherit;
     border: none;
     color: #fff
@@ -382,7 +383,7 @@ div#wp-responsive-toggle a:before {
 }
 
 .acf-tab-wrap.-left .acf-tab-group li a {
-    color: #1e5491!important
+    color: #488729!important
 }
 
 .acf-tab-wrap.-left .acf-tab-group li a:hover {
