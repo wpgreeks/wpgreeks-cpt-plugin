@@ -98,22 +98,17 @@ class AuthController extends BaseController
 		$user_id = wp_insert_user($user_data);
 			if (!is_wp_error($user_id)) 
 			{
-				echo 'Welcome! You have registered successfully...';
+				echo '<span class="successMsg">Welcome! You have registered successfully...</span>';
 			} 
 			else 
 			{
-			  if (isset($user_id->errors['empty_user_login'])) 
-			  	{
-					$notice_key = 'Username and Email are mandatory';
-					echo $notice_key;
-				} 
-				elseif (isset($user_id->errors['existing_user_login'])) 
+			  if (isset($user_id->errors['existing_user_login'])) 
 				{
-					echo'Username already exists, please try another username.';
+					echo'<span class="errorMsg">Username already exists, please try another username.</span>';
 				} 
 				else 
 				{
-					echo'Unable to create new user, please try again';
+					echo'<span class="errorMsg">Unable to create new user, please try again</span>';
 				}
 			}
 	  die;
@@ -157,7 +152,7 @@ class AuthController extends BaseController
 			<form id="wpgreeks-register-form" action="#" method="POST" name="register-form" class="register-form" autocomplete="off">
 				<h2>Create Account</h2>
 				<p>Enter your personal details and start journey with us</p>
-				<p class="register-message" style="display:none"></p>
+				<p class="status" style="display:none"></p>
 				<div class="form-group">
 					<label for="username">Enter Username</label>
 					<input type="text" class="form-control" name="new_user_name" placeholder="Username" id="new-username" >
@@ -172,7 +167,7 @@ class AuthController extends BaseController
 				</div>
 				<div class="form-group">
 					<label for="cpassword">Please Confirm Password</label>
-					<input type="password" class="form-control" name="re-pwd" placeholder="Confirm Password" id="re-pwd" autocomplete>
+					<input type="password" class="form-control" name="re_pwd" placeholder="Confirm Password" id="re_pwd" autocomplete>
 				</div>
 				<div class="register-form-btn-action">
 					<input type="submit"  class="button" id="register-button" value="Register">

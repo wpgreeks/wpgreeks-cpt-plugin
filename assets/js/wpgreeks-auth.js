@@ -29,25 +29,39 @@ jQuery(document).ready(function($) {
 
         // Specify validation rules
         rules: {
-          new_user_name: "required",
+          new_user_name: {
+            required: true,
+            minlength: 5
+          },
           new_user_email: {
             required: true,
             email: true
           },
           new_user_password: {
             required: true,
-            minlength: 5
+            minlength: 8
+          },
+          re_pwd: {
+            minlength: 8,
+            equalTo: "#new-userpassword"
           }
         },
 
         // Specify validation error messages
         messages: {
-          new_user_name: "Please enter your username",
+          new_user_name: {
+            required: "Please enter your username",
+            minlength: "Your username must be at least 5 characters long"
+          },
           new_user_password: {
             required: "Please provide a password",
-            minlength: "Your password must be at least 5 characters long"
+            minlength: "Your password must be at least 8 characters long"
           },
-          new_user_email: "Please enter a valid email address"
+          new_user_email: {
+            required: "Please enter your email",
+            email: "Please enter a valid email address"
+            
+          },
         },
 
         submitHandler: function(form) {
@@ -64,12 +78,11 @@ jQuery(document).ready(function($) {
                     new_user_password : newUserPassword
                 },
                 success: function(results){
-                    jQuery('.register-message').text(results).show();
-                },
-                error: function(results) {
+                    jQuery('.status').html(results).show();
+                    jQuery('.status').delay(5000).fadeOut('slow');
+
                 }
             });
         }
       });
-
 });

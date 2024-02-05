@@ -66,12 +66,15 @@ ul#wpgreeksBreadcrumb .breadcrumb-item:not(.item-current) a {
       text-align: left;
       display: block;
   }
-  p.status.error {
+  p.status span{
+    display: block;
+  }
+  p.status.error, p.status span.errorMsg {
     background: hsl(11deg 80% 45% / 29%);
     color: #000;
     padding: 5px 0px;
 }
-p.status.success {
+p.status.success, p.status span.successMsg {
     background: hsl(135.38deg 51.4% 51.6% / 47%);
     color: #000;
     padding: 5px 0px;
@@ -82,4 +85,9 @@ p.status.success {
     margin: 10px 0;
     color: #000;
     border: 1px solid hsla(206,100%,73.3%,1);
+}
+.register-form .form-group label.error {
+  color: hsla(11,80%,45%,1);
+  font-size: 13px;
+  margin-top: -5px;
 }
